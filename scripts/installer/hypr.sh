@@ -18,6 +18,9 @@ run_command "pacman -S --noconfirm xdg-desktop-portal-hyprland" "Install XDG des
 run_command "pacman -S --noconfirm polkit-kde-agent" "Install KDE Polkit agent for authentication dialogs" "yes"
 
 run_command "pacman -S --noconfirm dunst" "Install Dunst notification daemon" "yes"
+
+run_command "pacman -S --noconfirm gnome-keyring" "Install Gnome keyring to store sensetive data" "yes" "no"
+
 run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/dunst /home/$SUDO_USER/.config/" "Copy dunst config" "yes" "no"
 
 run_command "pacman -S --noconfirm qt5-wayland qt6-wayland" "Install QT support on wayland" "yes"
